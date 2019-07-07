@@ -3,13 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
+import fastclick from 'fastclick'
+import './assets/styles/reset.css'
+import './assets/styles/border.css'
 
-Vue.use(ElementUI);
+// Vue.use(ElementUI);
 
 
 Vue.config.productionTip = false
+fastclick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
